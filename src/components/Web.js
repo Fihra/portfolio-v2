@@ -59,7 +59,7 @@ const Web = (props) => {
     const showProjects = () => {
         return projectData.map((project, index) => {
             return (
-                <Fade in={true} timeout={{ enter: 1000, exit: 1000}} >
+                <Fade in={true} timeout={{ enter: 1000, exit: 1000}} key={index} >
                     <Grid item sm={4}><WebCard key={index} project={project} /></Grid>
                 </Fade>
             )

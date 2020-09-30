@@ -32,7 +32,7 @@ const WebCard = (props) => {
         <Grow in={true} timeout={1000}>
             <Card className={classes.cardStyles}>
                 <CardHeader title={title}/>
-                <CardMedia className="project-image" image={thumbnail}/>
+                {thumbnail ? <CardMedia className="project-image" image={thumbnail}/> : <div className="project-image"/>}
                 <CardContent>
                     <Typography>{info}</Typography>
                     <Typography>Tools used: {toolsUsed}</Typography>
