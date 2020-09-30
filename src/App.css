@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+body {
+  background-color: #012A36;
+  /* color: white;  */
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +40,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/*Navigation*/
+.navigator {
+  align-items: center;
+}
+
+.skills-container {
+  padding: 20px;
+}
+
+.item-list {
+  text-align: center;
+}
+
+.project-card {
+  width: 500px;
+  height: 500px;
+}
+
+.project-image {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width:50%;
+  width: 300px;
+  height: 200px;
 }
