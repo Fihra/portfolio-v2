@@ -6,6 +6,7 @@ import MusicianDirectory from '../assets/MusicianDirectory.jpg';
 import InstrumentCollection from '../assets/Instrument_Collection.jpg';
 import CultureAwareness from '../assets/culture-awareness-101.png';
 import JamOut from '../assets/Jam-Out.png';
+import JamOutVideo from '../assets/Jam_Out.mp4';
 
 import WebCard from './WebCard';
 
@@ -17,6 +18,7 @@ const Web = (props) => {
             info: "An SPA of a Music Loop Sequence that you can play to with the browser piano keyboard. Sounds built uses Tone.js. ",
             toolsUsed: "React Hooks, Django, Tone.js, Blueprint.js, Kiwi Orbits, React-Piano",
             gh: "https://github.com/Fihra/Jam-Out",
+            vid: JamOutVideo,
         },
         {
             title: 'Culture Awareness 101',
