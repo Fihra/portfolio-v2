@@ -10,11 +10,11 @@ const methodologies = ["MVC (Model-View-Controller)", "OOP (Object-Oriented Prog
 
 const useStyles = makeStyles(() => ({
     skillStyles: {
-        fontWeight: 'bold'
+        fontWeight: 'bold',
     },
     skillsContainer: {
-        backgroundColor: "#012A36",
-        color: 'white'
+        backgroundColor: "transparent",
+        color: 'white',
     }
 }))
 
@@ -22,8 +22,8 @@ const SkillsData = (props) => {
     const classes = useStyles();
 
     const showItems = (itemsArray) => {
-        return itemsArray.map(item => {
-            return <ListItem className="item-list">{item}</ListItem>
+        return itemsArray.map((item, index)=> {
+            return <ListItem key={index} className="item-list">{item}</ListItem>
         })
     }
     

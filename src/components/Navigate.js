@@ -3,6 +3,7 @@ import { Tabs, Tab, Fade } from '@material-ui/core';
 import About from './About';
 import Games from './Games';
 import Web from './Web';
+import Audio from './Audio';
 
 import { makeStyles } from '@material-ui/styles';
 
@@ -28,10 +29,12 @@ const Navigate = (props) => {
                 <Tab className={classes.navBarStyles}  value="About" label="About" aria-label="About"/>
                 <Tab className={classes.navBarStyles}  value="Games" label="Games" aria-label="Games"/>
                 <Tab className={classes.navBarStyles}  value="Web" label="Software Apps" aria-label="Software Apps"/>
+                <Tab className={classes.navBarStyles}  value="Music" label="Music" aria-label="Music"/>
             </Tabs>
             {selectionState === "About" ? <About />: null}
             {selectionState === "Games" ? <Games /> : null}
             {selectionState === "Web" ? <Fade in={true} timeout={{enter: 4000, exit: 4000}}><Web /></Fade> : null}
+            {selectionState === "Music" ? <Audio />: null}
         </div> 
     )
 }

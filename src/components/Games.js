@@ -4,6 +4,7 @@ import ProjectCard from './ProjectCard';
 import {Grid} from '@material-ui/core';
 
 //Project Image Assets
+import RitsuMochi from '../assets/ritsu_mochi.png';
 import Buwan from '../assets/Reincarnation_of_Buwan.jpg';
 import AsteroidDefense from '../assets/Asteroid_Defense.png';
 import NLV from '../assets/NLV.png';
@@ -25,6 +26,17 @@ const Games = (props) => {
             gh: null,
             videoFootage: null,
             playGame: null,
+            soundtrack: null
+        },
+        {
+            title: 'Ritsu & Mochi (WIP)',
+            thumbnail: RitsuMochi,
+            info: "A Unity isometric puzzle game. Follow Ritsu the young robotics engineer and MOCHI, his trusty robit as they explore an abandoned factory,",
+            role: "Technical Sound Designer",
+            toolsUsed: "Unity, C#, FMOD, Reaper",
+            gh: "https://github.com/zsd4yr/mochi",
+            videoFootage: null,
+            playGame: "https://globalgamejam.org/2021/games/ritsu-mochi-9",
             soundtrack: null
         },
         {

@@ -12,7 +12,7 @@ const useStyles = makeStyles(() => ({
         width: 300,
         height: 500,
         padding: 50,
-        backgroundColor: "#012A36",
+        backgroundColor: "transparent",
         color: 'white'
     }
 }))

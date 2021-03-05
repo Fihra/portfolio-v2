@@ -7,13 +7,21 @@ import InstrumentCollection from '../assets/Instrument_Collection.jpg';
 import CultureAwareness from '../assets/culture-awareness-101.png';
 import JamOut from '../assets/Jam-Out.png';
 import JamOutVideo from '../assets/Jam_Out.mp4';
+import MusicPlayerElectron from '../assets/Music_Player_Electron.png';
 
 import WebCard from './WebCard';
 
 const Web = (props) => {
     const projectData = [
         {
-            title: 'Jam Out (WIP)',
+            title: 'Music Player (WIP)',
+            thumbnail: MusicPlayerElectron,
+            info: "A desktop app music player that allows the user to playback the audio. Audio manipulation and EQ features planned and to be implemented.",
+            toolsUsed: "Electron, Javascript, HTML, CSS, Web Audio API",
+            gh: "https://github.com/Fihra/Music-Player-Electron"
+        },
+        {
+            title: 'Jam Out',
             thumbnail: JamOut,
             info: "An SPA of a Music Loop Sequence that you can play to with the browser piano keyboard. Sounds built uses Tone.js. ",
             toolsUsed: "React Hooks, Django, Tone.js, Blueprint.js, Kiwi Orbits, React-Piano",
@@ -28,14 +36,14 @@ const Web = (props) => {
             gh: "https://github.com/Fihra/culture-awareness-101",
             webDemo: "https://culture-awareness-101.herokuapp.com"
         },
-        {
-            title: 'Hear Me Out (In-Progress)',
-            thumbnail: null,
-            info: "A web application for a directory of musicians, audio people.",
-            toolsUsed: "React-Redux, Node.js, Express, MongoDB",
-            gh: "https://github.com/Fihra/Hear-Me-Out"
+        // {
+        //     title: 'Hear Me Out (In-Progress)',
+        //     thumbnail: null,
+        //     info: "A web application for a directory of musicians, audio people.",
+        //     toolsUsed: "React-Redux, Node.js, Express, MongoDB",
+        //     gh: "https://github.com/Fihra/Hear-Me-Out"
 
-        },
+        // },
         {
             title: 'Instrument Collection',
             thumbnail: InstrumentCollection,

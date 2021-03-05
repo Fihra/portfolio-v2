@@ -3,8 +3,9 @@
 }
 
 body {
-  background-color: #012A36;
-  /* color: white;  */
+  /* background-color: #012A36; */
+  background: rgb(2,0,36);
+  background: linear-gradient(17deg, rgba(2,0,36,1) 0%, rgba(9,53,121,1) 15%, rgba(0,74,97,1) 100%); 
 }
 
 .App-logo {
@@ -67,4 +68,14 @@ body {
   width:50%;
   width: 300px;
   height: 200px;
+}
+
+.footer-text {
+  color: white;
+}
+
+.music-social-media-logo {
+  width: 48px;
+  height: 48px;
+  padding: 10px;
 }

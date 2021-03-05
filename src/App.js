@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Navigate from './components/Navigate';
+import Footer from './components/Footer';
 import './App.css';
 
 import { createMuiTheme } from '@material-ui/core/styles';
@@ -13,7 +14,7 @@ const theme = createMuiTheme({
     },
     secondary: {
       light: '#0066ff',
-      main: '#0EBE83',
+      main: '#a3e8ff',
       contrastText: '#ffcc00',
     },
     contrastThreshold: 3,
@@ -27,6 +28,7 @@ const App = () => {
       <div className="App">
         <Header/>
         <Navigate/>
+        <Footer/>
       </div>
     </ThemeProvider>
   );
