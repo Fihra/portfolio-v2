@@ -6,7 +6,6 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import EmailIcon from '@material-ui/icons/Email';
 import WebIcon from '@material-ui/icons/Web';
 import DescriptionIcon from '@material-ui/icons/Description';
-import MusicNoteIcon from '@material-ui/icons/MusicNote';
 
 import AudioTechResume from '../assets/Fabian_Fabro_Tech_Audio_Resume.pdf';
 import SoftwareResume from '../assets/Fabian_Software_Engineer_Resume.pdf';
