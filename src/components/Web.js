@@ -8,6 +8,8 @@ import CultureAwareness from '../assets/culture-awareness-101.png';
 import JamOut from '../assets/Jam-Out.png';
 import JamOutVideo from '../assets/Jam_Out.mp4';
 import MusicPlayerElectron from '../assets/Music_Player_Electron.png';
+import LearnRondalla from '../assets/Learn_Rondalla.png';
+
 
 import WebCard from './WebCard';
 
@@ -19,6 +21,14 @@ const Web = (props) => {
             info: "A desktop app music player that allows the user to playback the audio. Audio manipulation and EQ features planned and to be implemented.",
             toolsUsed: "Electron, Javascript, HTML, CSS, Web Audio API",
             gh: "https://github.com/Fihra/Music-Player-Electron"
+        },
+        {
+            title: 'Learn Filipino Rondalla',
+            thumbnail: LearnRondalla,
+            info: "A SPA resource about Filipino Rondalla, a traditional music style from Philippines. This is for composers and arrangers to help get started in scoring for it.",
+            toolsUsed: "React Hooks, HTML, CSS, react-scroll, react-alice-carousel",
+            gh: "https://github.com/Fihra/Learn-Rondalla",
+            webDemo: "https://learnfilipinorondalla.netlify.app/"
         },
         {
             title: 'Jam Out',
