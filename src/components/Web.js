@@ -9,14 +9,30 @@ import JamOut from '../assets/Jam-Out.png';
 import JamOutVideo from '../assets/Jam_Out.mp4';
 import MusicPlayerElectron from '../assets/Music_Player_Electron.png';
 import LearnRondalla from '../assets/Learn_Rondalla.png';
-
+import MusicLeftovers from '../assets/Music_leftovers.png';
+import MusicLeftoversVid from '../assets/Music_Leftovers_demo.mp4';
+import SaranayVST from '../assets/Saranay_VST_Demo.gif';
 
 import WebCard from './WebCard';
 
 const Web = (props) => {
     const projectData = [
         {
-            title: 'Music Player (WIP)',
+            title: 'Music Leftovers',
+            thumbnail: MusicLeftovers,
+            info: "A mock E-Commerce shop of used music gear.",
+            toolsUsed: "React Hooks, React Hook Form, HTML, Material UI, Email.js, Stripe.js",
+            gh: "https://github.com/Fihra/music-shop-ecommerce",
+            vid: MusicLeftoversVid
+        },
+        {
+            title: 'Saranay VST',
+            thumbnail: SaranayVST,
+            info: "Kontakt VST instrument of the Saranay, a Filipino traditional instrument.",
+            toolsUsed: "Kontakt 5, Kontakt KSP, JKnobman, Reaper, Paint.NET"
+        },
+        {
+            title: 'Music Player',
             thumbnail: MusicPlayerElectron,
             info: "A desktop app music player that allows the user to playback the audio. Audio manipulation and EQ features planned and to be implemented.",
             toolsUsed: "Electron, Javascript, HTML, CSS, Web Audio API",

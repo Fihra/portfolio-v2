@@ -2,7 +2,7 @@ import React from 'react';
 import { List, ListItem, Typography, Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 
-const languages = ["Javascript", "C#", "Python", "C++", "Ruby", "HTML", "CSS", "SQL"];
+const languages = ["Javascript", "C#", "Python", "KSP", "C++", "Ruby", "HTML", "CSS", "SQL"];
 const frameworks = ["React", "Redux", "Unity", "Unreal Engine", "Django", "ASP.NET", "Ruby on Rails"];
 const audioTools = ["Wwise", "FMOD", "Reaper", "Musescore"];
 const otherTools = ["MongoDB", "Node.js", "Express", "SQLite3", "PostgreSQL", "Material UI", "Git & Github", "Postman"];
@@ -15,6 +15,7 @@ const useStyles = makeStyles(() => ({
     skillsContainer: {
         backgroundColor: "transparent",
         color: 'white',
+        width: 1200
     }
 }))
 
@@ -32,31 +33,31 @@ const SkillsData = (props) => {
             <Grid item xs={false} />
             <Grid xs={2} item>
                 <List>
-                    <Typography className={classes.skillStyles}>Languages</Typography>
+                    <Typography variant="h6" className={classes.skillStyles}>Languages</Typography>
                     {showItems(languages)}
                 </List>
             </Grid>
             <Grid xs={2} item>
                 <List>
-                    <Typography className={classes.skillStyles}>Frameworks</Typography>
+                    <Typography variant="h6" className={classes.skillStyles}>Frameworks</Typography>
                     {showItems(frameworks)}
                 </List>
             </Grid>
             <Grid xs={2} item>
                 <List>
-                    <Typography className={classes.skillStyles}>Audio Tools</Typography>
+                    <Typography variant="h6" className={classes.skillStyles}>Audio Tools</Typography>
                     {showItems(audioTools)}
                 </List>
             </Grid>
             <Grid xs={2} item>
                 <List>
-                    <Typography className={classes.skillStyles}>Other Tools</Typography>
+                    <Typography variant="h6" className={classes.skillStyles}>Other Tools</Typography>
                     {showItems(otherTools)}
                 </List>
             </Grid>
             <Grid xs={2} item>
                 <List>
-                    <Typography className={classes.skillStyles}>Methodologies</Typography>
+                    <Typography variant="h6" className={classes.skillStyles}>Methodologies</Typography>
                     {showItems(methodologies)}
                 </List>
             </Grid>
