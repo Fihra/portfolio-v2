@@ -4,6 +4,7 @@ import ProjectCard from './ProjectCard';
 import {Grid} from '@material-ui/core';
 
 //Project Image Assets
+import MultoIlaw from '../assets/multo-ilaw_preview.png';
 import RitsuMochi from '../assets/ritsu_mochi.png';
 import Buwan from '../assets/Reincarnation_of_Buwan.jpg';
 import AsteroidDefense from '../assets/Asteroid_Defense.png';
@@ -18,18 +19,29 @@ import DeathByDebt from '../assets/DeathByDebt.png';
 const Games = (props) => {
     const projectData = [
         {
+            title: 'Multo ilaw (WIP)',
+            thumbnail: MultoIlaw,
+            info: "A small 2D Unity game where you play as a ghost bringing a light to a village to ward off the evil spirits.",
+            role: "Solo Developer",
+            toolsUsed: "Unity, C#, Piskel, Reaper, Musescore",
+            gh: "https://github.com/Fihra/multo-ilaw",
+            videoFootage: null,
+            playGame: null,
+            soundtrack: null
+        },
+        {
             title: 'Reincarnation of Buwan (WIP)',
             thumbnail: Buwan,
-            info: "A Unity 2D Action-Adventure game where you play as Buwan, an Aswang weredog, to save the world from an evil witch.",
+            info: "A 2D Unity Action-Adventure game where you play as Buwan, an Aswang weredog, to save the world from an evil witch.",
             role: "Solo Developer",
-            toolsUsed: "Unity, C#, Wwise, Reaper, Musescore",
+            toolsUsed: "Unity, C#, Piskel, Wwise, Reaper, Musescore",
             gh: null,
             videoFootage: null,
             playGame: null,
             soundtrack: null
         },
         {
-            title: 'Ritsu & Mochi (WIP)',
+            title: 'Ritsu & Mochi',
             thumbnail: RitsuMochi,
             info: "A Unity isometric puzzle game. Follow Ritsu the young robotics engineer and MOCHI, his trusty robit as they explore an abandoned factory,",
             role: "Technical Sound Designer",
@@ -44,7 +56,7 @@ const Games = (props) => {
             thumbnail: AsteroidDefense,
             info: "A Unity 2D Space-shooter game where you shoot down falling asteroids hurling towards Earth.",
             role: "Solo Developer",
-            toolsUsed: "Unity, C#, Wwise, Reaper, Musescore",
+            toolsUsed: "Unity, C#, Wwise, Reaper, Musescore, Paint.NET",
             gh: "https://github.com/Fihra/Asteroid-Defense",
             videoFootage: "https://youtu.be/rDpsfB2TOX0",
             playGame: null,
