@@ -30,7 +30,7 @@ const Games = (props) => {
             soundtrack: "https://firahfabe.bandcamp.com/album/multo-ilaw-game-soundtrack"
         },
         {
-            title: 'Reincarnation of Buwan (WIP)',
+            title: 'Reincarnation of Buwan (On Hold)',
             thumbnail: Buwan,
             info: "A 2D Unity Action-Adventure game where you play as Buwan, an Aswang weredog, to save the world from an evil witch.",
             role: "Solo Developer",
