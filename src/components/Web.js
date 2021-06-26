@@ -29,7 +29,10 @@ const Web = (props) => {
             title: 'Saranay VST',
             thumbnail: SaranayVST,
             info: "Kontakt VST instrument of the Saranay, a Filipino traditional instrument.",
-            toolsUsed: "Kontakt 5, Kontakt KSP, JKnobman, Reaper, Paint.NET"
+            toolsUsed: "Kontakt 5, Kontakt KSP, JKnobman, Reaper, Paint.NET",
+            gh: "https://github.com/Fihra/Saranay-VST-Public",
+            vid: "https://youtu.be/8jG3khmjd_g",
+            webDemo: "https://firahfabe.itch.io/saranay-vst"
         },
         {
             title: 'Music Player',

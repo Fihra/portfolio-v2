@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard';
 import {Grid} from '@material-ui/core';
 
 //Project Image Assets
-import MultoIlaw from '../assets/multo-ilaw_preview.png';
+import MultoIlaw from '../assets/multo-ilaw.png';
 import RitsuMochi from '../assets/ritsu_mochi.png';
 import Buwan from '../assets/Reincarnation_of_Buwan.jpg';
 import AsteroidDefense from '../assets/Asteroid_Defense.png';
@@ -19,15 +19,15 @@ import DeathByDebt from '../assets/DeathByDebt.png';
 const Games = (props) => {
     const projectData = [
         {
-            title: 'Multo ilaw (WIP)',
+            title: 'Multo ilaw',
             thumbnail: MultoIlaw,
-            info: "A small 2D Unity game where you play as a ghost bringing a light to a village to ward off the evil spirits.",
+            info: "A 2D Unity game where you play as a ghost who must bring a light to a village to ward off the evil spirits.",
             role: "Solo Developer",
-            toolsUsed: "Unity, C#, Piskel, Reaper, Musescore",
+            toolsUsed: "Unity, Wwise, C#, Piskel, Reaper, Musescore",
             gh: "https://github.com/Fihra/multo-ilaw",
-            videoFootage: null,
-            playGame: null,
-            soundtrack: null
+            videoFootage: "https://youtu.be/70yQqVuBUv4",
+            playGame: "https://firahfabe.itch.io/multo-ilaw",
+            soundtrack: "https://firahfabe.bandcamp.com/album/multo-ilaw-game-soundtrack"
         },
         {
             title: 'Reincarnation of Buwan (WIP)',
