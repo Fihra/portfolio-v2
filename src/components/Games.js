@@ -4,6 +4,7 @@ import ProjectCard from './ProjectCard';
 import {Grid} from '@material-ui/core';
 
 //Project Image Assets
+import Maliksi from '../assets/Maliksi.png';
 import MultoIlaw from '../assets/multo-ilaw.png';
 import RitsuMochi from '../assets/ritsu_mochi.png';
 import Buwan from '../assets/Reincarnation_of_Buwan.jpg';
@@ -19,9 +20,20 @@ import DeathByDebt from '../assets/DeathByDebt.png';
 const Games = (props) => {
     const projectData = [
         {
+            title: 'Maliksi',
+            thumbnail: Maliksi,
+            info: 'A 2D boss rush game where you fight Filipino folklore-inspired creatures to retrieve the stolen light.',
+            role: "Solo Developer",
+            toolsUsed: "Unreal Engine, Wwise, UE Blueprinting, Piskel, Reaper, Musescore, Paint.NET",
+            gh: null,
+            videoFootage: null,
+            playGame: null,
+            soundtrack: null
+        },
+        {
             title: 'Multo ilaw',
             thumbnail: MultoIlaw,
-            info: "A 2D Unity game where you play as a ghost who must bring a light to a village to ward off the evil spirits.",
+            info: "A 2D game where you play as a ghost who must bring a light to a village to ward off the evil spirits.",
             role: "Solo Developer",
             toolsUsed: "Unity, Wwise, C#, Piskel, Reaper, Musescore",
             gh: "https://github.com/Fihra/multo-ilaw",

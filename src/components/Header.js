@@ -6,9 +6,11 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import EmailIcon from '@material-ui/icons/Email';
 import WebIcon from '@material-ui/icons/Web';
 import DescriptionIcon from '@material-ui/icons/Description';
+import MovieIcon from '@material-ui/icons/Movie';
 
 import AudioTechResume from '../assets/Fabian_Fabro_Tech_Audio_Resume.pdf';
 import SoftwareResume from '../assets/Fabian_Software_Engineer_Resume.pdf';
+import GameAudioReel from '../assets/Fabian_Game_Audio_Reel.mp4';
 
 const myGithub = "https://www.github.com/fihra";
 const myLinkedIn = "https://www.linkedin.com/in/fabian-fabro";
@@ -57,6 +59,11 @@ const Header = () => {
                 <DescriptionIcon></DescriptionIcon>
                 </Link>
             </IconButton> 
+            <IconButton>
+                <Link href={GameAudioReel} target="_blank">
+                <MovieIcon></MovieIcon>
+                </Link>
+            </IconButton>
         </div>
     )
 }
