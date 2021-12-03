@@ -30,29 +30,46 @@ const WebCard = (props) => {
     }
 
     return(
-        <Grow in={true} timeout={1000}>
-            <Card className={classes.cardStyles}>
-                <CardHeader title={title}/>
-                {thumbnail ? <CardMedia className="project-image" image={thumbnail}/> : <div className="project-image"/>}
-                <CardContent>
-                    <Typography>{info}</Typography>
-                    <Typography>Tools used: {toolsUsed}</Typography>
-                </CardContent>
-                <CardActions>
-                    <Link href={gh}>
-                        <IconButton color="primary">
-                            <GitHubIcon/>
-                        </IconButton>
-                    </Link>
-                    {vid ? <Link href={vid}>
-                        <IconButton color="primary">
-                            <MovieIcon/>
-                        </IconButton>
-                    </Link> : null}
-                    {props.project.webDemo ? showDemoLink() : null}
-                </CardActions>
-            </Card>
-        </Grow>
+        // <Grow in={true} timeout={1000}>
+        //     <Card className={classes.cardStyles}>
+        //         <CardHeader title={title}/>
+        //         {thumbnail ? <CardMedia className="project-image" image={thumbnail}/> : <div className="project-image"/>}
+        //         <CardContent>
+        //             <Typography>{info}</Typography>
+        //             <Typography>Tools used: {toolsUsed}</Typography>
+        //         </CardContent>
+        //         <CardActions>
+        //             <Link href={gh}>
+        //                 <IconButton color="primary">
+        //                     <GitHubIcon/>
+        //                 </IconButton>
+        //             </Link>
+        //             {vid ? <Link href={vid}>
+        //                 <IconButton color="primary">
+        //                     <MovieIcon/>
+        //                 </IconButton>
+        //             </Link> : null}
+        //             {props.project.webDemo ? showDemoLink() : null}
+        //         </CardActions>
+        //     </Card>
+        // </Grow>
+        <div className="web-container">
+            <img src={thumbnail} alt={title}/>
+            <h2>{title}</h2>
+            <p>{info}</p>
+            <div className="project-links">
+                <Link href={gh}>
+                    <IconButton>
+                        <GitHubIcon/>
+                    </IconButton>
+                </Link>
+                <Link href={vid}>
+                    <IconButton>
+                        <MovieIcon/>
+                    </IconButton>
+                </Link>
+            </div>
+        </div>
     )
 }
 

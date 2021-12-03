@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import ProjectCard from './ProjectCard';
 import {Grid} from '@material-ui/core';
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import FullContext from './FullContext';
+import ReactPlayer from 'react-player';
 
 //Project Image Assets
 import Maliksi from '../assets/Maliksi.png';
@@ -18,6 +21,14 @@ import SideTracked from '../assets/Sidetracked.jpg';
 import DeathByDebt from '../assets/DeathByDebt.png';
 
 const Games = (props) => {
+    const { data, dataDispatch } = useContext(FullContext);
+
+    const gameAudioReel = "https://www.youtube.com/watch?v=LLDqO-Kff68"
+
+    const handleClick = () => {
+        dataDispatch({type: "GO_HOME"});
+    }
+
     const projectData = [
         {
             title: 'Maliksi',
@@ -158,7 +169,8 @@ const Games = (props) => {
         return projectData.map((project, index) => {
             return (
                 // <Fade in={true} timeout={{ enter: 1000, exit: 1000}} >
-                    <Grid key={index} item sm={4}><ProjectCard key={index} project={project} /></Grid>
+                    // <Grid key={index} item sm={4}><ProjectCard key={index} project={project} /></Grid>
+                    <ProjectCard key={index} project={project} />
                 // </Fade>
             )
         })
@@ -166,11 +178,20 @@ const Games = (props) => {
 
         return(
             <div style={{ padding: 20}}>
-                {
+                {/* {
                     <Grid container >
                         {showProjects()}
                     </Grid>
-                }
+                } */}
+                <div style={{float: "left"}}>
+                {showProjects()}
+                </div>
+                <div className="project-side-bar">
+                    <h1>Games</h1>
+                    <button className="back-button" onClick={handleClick}><ArrowForwardIcon/></button>
+                    <h3>Game Audio Reel</h3>
+                    <ReactPlayer url={gameAudioReel} width={475} className="video-reel-player"/>
+                </div>
             </div>
             
         )

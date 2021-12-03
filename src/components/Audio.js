@@ -1,10 +1,12 @@
-import React from 'react';
-import { Link, Typography, Tooltip } from '@material-ui/core';
+import React, { useContext } from 'react';
+import { Link, Tooltip } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import FirahFabeLaud from "../assets/FirahFabe_Laud.gif";
 import BandcampLogo from "../assets/bandcamp-button-circle-aqua-512.png"
 import YoutubeLogo from "../assets/youtube.png"
 import SpotifyLogo from "../assets/spotify.png"
+import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
+import FullContext from './FullContext';
 
 const useStyles = makeStyles(() => ({
     mediaStyles: {
@@ -41,7 +43,6 @@ const useStyles = makeStyles(() => ({
         float: "left",
         paddingLeft: "250px",
         marginLeft: "30px"
-        // padding: "10px"
     },
     socialMediaContainer: {
         float: "right"
@@ -78,10 +79,17 @@ const showSocialMedia = () => {
 }
 
 const Audio = () => {
+    const { data, dataDispatch } = useContext(FullContext);
     const classes = useStyles();
+    const handleClick = () => {
+        dataDispatch({type: "GO_HOME"});
+    }
+
     return(
-        <div>
-            <div className={classes.sideStyles}>
+        <div className="audio-container">
+            <button className="back-button" onClick={handleClick} style={{marginTop: 10}}><ArrowUpwardIcon/></button>
+            <h1>Music</h1>
+            {/* <div className={classes.sideStyles}>
                 <Tooltip
                     title="Pixel art by Fabian Fabro."
                     placement="left"
@@ -106,6 +114,38 @@ const Audio = () => {
                     <Typography variant="h5">VGM & Anime Rondalla Covers</Typography>
                     <iframe title="Youtube Playlist" className={classes.videoStyles} src="https://www.youtube.com/embed/videoseries?list=PLvJ2CQ-nmKo74Y9Ilf5zHJUPmt6u0ziSB" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
+            </div> */}
+
+
+
+            <div className="music-image">
+                <Tooltip
+                    title="Pixel art by Fabian Fabro."
+                    placement="left"
+                >
+                <img src={FirahFabeLaud} alt="FirahFabe Laud Pixel art" style={{width: 150, height: 150}}/>
+                </Tooltip>
+                <h4>@FirahFabe</h4>
+                {showSocialMedia()}
+            </div>
+            <div className="bandcamp-container">
+                <iframe title="Forest Haven Bandcamp" className="bandcamp-styles" src="https://bandcamp.com/EmbeddedPlayer/album=1994845105/size=large/bgcol=333333/linkcol=2ebd35/artwork=small/transparent=true/" seamless><a href="https://firahfabe.bandcamp.com/album/forest-haven">Forest Haven by FirahFabe</a></iframe>
+                <iframe title="Farlah's Voyage Bandcamp" className="bandcamp-styles" src="https://bandcamp.com/EmbeddedPlayer/album=159311342/size=large/bgcol=333333/linkcol=4ec5ec/artwork=small/transparent=true/" seamless><a href="https://firahfabe.bandcamp.com/album/farlahs-voyage-filipino-rpg-inspired">Farlah&#39;s Voyage: Filipino RPG-Inspired by FirahFabe</a></iframe>
+            </div>
+            <div className="youtube-container">
+                <div>
+                    <h5>More Original Compositions</h5>
+                    <iframe title="Youtube Playlist" className="youtube-video-player" src="https://www.youtube.com/embed/videoseries?list=PLvJ2CQ-nmKo6OqHGuwnOYwNTKdnILHIwq" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h5>VGM & Anime Rondalla Covers</h5>
+                    <iframe title="Youtube Playlist" className="youtube-video-player" src="https://www.youtube.com/embed/videoseries?list=PLvJ2CQ-nmKo74Y9Ilf5zHJUPmt6u0ziSB" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                {/* <h4>More Original Compositions</h4>
+                <iframe title="Youtube Playlist" className="youtube-video-player" src="https://www.youtube.com/embed/videoseries?list=PLvJ2CQ-nmKo6OqHGuwnOYwNTKdnILHIwq" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                <h4>Video Game Music & Anime Rondalla Covers</h4>
+                <iframe title="Youtube Playlist" className="youtube-video-player" src="https://www.youtube.com/embed/videoseries?list=PLvJ2CQ-nmKo74Y9Ilf5zHJUPmt6u0ziSB" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> */}
             </div>
 
         </div>

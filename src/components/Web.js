@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {Fade, Grid} from '@material-ui/core';
 
 import MusicInspire from '../assets/MusicInspire.jpg';
@@ -14,8 +14,17 @@ import MusicLeftoversVid from '../assets/Music_Leftovers_demo.mp4';
 import SaranayVST from '../assets/Saranay_VST_Demo.gif';
 
 import WebCard from './WebCard';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import FullContext from './FullContext';
 
 const Web = (props) => {
+
+    const { data, dataDispatch } = useContext(FullContext);
+
+    const handleClick = () => {
+        dataDispatch({type: "GO_HOME"});
+    }
+
     const projectData = [
         {
             title: 'Music Leftovers',
@@ -98,22 +107,30 @@ const Web = (props) => {
     const showProjects = () => {
         return projectData.map((project, index) => {
             return (
-                <Fade in={true} timeout={{ enter: 1000, exit: 1000}} key={index} >
-                    <Grid item sm={4}><WebCard key={index} project={project} /></Grid>
-                </Fade>
+                // <Fade in={true} timeout={{ enter: 1000, exit: 1000}} key={index} >
+                //     <Grid item sm={4}><WebCard key={index} project={project} /></Grid>
+                // </Fade>
+                <WebCard key={index} project={project} />
             )
         })
     }
 
         return(
-            <div style={{ padding: 20}}>
-                {
+            <div className="software-projects-container" >
+                {/* {
                     <Grid container >
-                        {/* <Grid item sm={false}/> */}
                         {showProjects()}
-                        {/* <Grid item sm={false}/> */}
                     </Grid>
-                }
+                } */}
+               
+                <div className="web-side-bar">
+                    <h1>Projects</h1>
+                    <button className="back-button" onClick={handleClick}><ArrowBackIcon/></button>
+                </div>
+                
+                <div style={{float: "right"}}>
+                    {showProjects()}
+                </div>
             </div>
             
         )
