@@ -45,7 +45,7 @@ const About = (props) =>  {
             </Fade> */}
             <main>
                 <h1 style={{textAlign: "left", marginLeft: 180}}>About</h1>
-                <img src={myImg} alt="solo-headshot"/>
+                <img className="solo-headshot" src={myImg} alt="solo-headshot"/>
                 <button onClick={handleClick} className="back-button" style={{position: 'absolute', top: 30} }><ArrowForwardIcon/></button>
                 <p className="about-paragraph">Hi! I'm Fabian. I am a technical audio designer, software developer & composer. From integrating music & audio into games, creating music and sfx, to building web & software apps. I'm passionate with combining my skills of audio & technology. I have worked on collaborative game jams as a technical sound designer & composer. Developed solo game projects from working in programming, music, sound design, & art. Built a variety of software apps, from web apps to an audio plugin. </p>
                 

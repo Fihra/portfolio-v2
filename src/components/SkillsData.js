@@ -68,9 +68,7 @@ const SkillsData = (props) => {
 
     const showItems2 = (itemsCollection) => {
         return Object.entries(itemsCollection).map(([key, value]) => {
-            console.log("key: ", key);
-            console.log("value: ", value);
-            return <img className="item" key={key} alt={key} style={{width:"75px", height: "75px"}} src={value} onMouseOver={() => showKey(key)} />
+            return <img className="skill-img" key={key} alt={key} src={value} onMouseOver={() => showKey(key)} />
         })
     }
     
@@ -110,6 +108,8 @@ const SkillsData = (props) => {
         //     <Grid item xs={false} />
         // </Grid>
         <div className="skills-container">
+            <br/>
+            <br/>
             {isLanguage !== "" ? <span className="show-certain-skill"> | {isLanguage} |</span> : null} 
              <div className="all-skills">
                 <div>
