@@ -1,8 +1,5 @@
-import React, { useContext, useReducer, useEffect } from 'react';
-import Header from './components/Header';
-import Navigate from './components/Navigate';
+import React, { useReducer } from 'react';
 import Navigate2 from './components/Navigate2';
-import Footer from './components/Footer';
 import './App.css';
 import FullContext from './components/FullContext';
 
@@ -48,10 +45,7 @@ const App = () => {
     <FullContext.Provider value={{data: data, dataDispatch: dispatch}}>
     <ThemeProvider theme={theme}>
       <div className="App">
-        {/* <Header/> */}
-        {/* <Navigate/> */}
         <Navigate2/>
-        {/* <Footer/> */}
       </div>
     </ThemeProvider>
     </FullContext.Provider>

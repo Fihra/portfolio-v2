@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 
 import ProjectCard from './ProjectCard';
-import {Grid} from '@material-ui/core';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import FullContext from './FullContext';
 import ReactPlayer from 'react-player';
@@ -21,7 +20,7 @@ import SideTracked from '../assets/Sidetracked.jpg';
 import DeathByDebt from '../assets/DeathByDebt.png';
 
 const Games = (props) => {
-    const { data, dataDispatch } = useContext(FullContext);
+    const { dataDispatch } = useContext(FullContext);
 
     const gameAudioReel = "https://www.youtube.com/watch?v=LLDqO-Kff68"
 

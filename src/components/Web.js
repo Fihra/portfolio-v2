@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import {Fade, Grid} from '@material-ui/core';
 
 import MusicInspire from '../assets/MusicInspire.jpg';
 import MusicianDirectory from '../assets/MusicianDirectory.jpg';
@@ -19,7 +18,7 @@ import FullContext from './FullContext';
 
 const Web = (props) => {
 
-    const { data, dataDispatch } = useContext(FullContext);
+    const { dataDispatch } = useContext(FullContext);
 
     const handleClick = () => {
         dataDispatch({type: "GO_HOME"});

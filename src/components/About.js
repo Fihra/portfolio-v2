@@ -23,7 +23,7 @@ import FullContext from './FullContext';
 const About = (props) =>  {
 
     // const classes = useStyles();
-    const { data, dataDispatch } = useContext(FullContext);
+    const { dataDispatch } = useContext(FullContext);
 
     const handleClick = () => {
         dataDispatch({type: "GO_HOME"});

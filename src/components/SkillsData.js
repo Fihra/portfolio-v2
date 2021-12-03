@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { List, ListItem, Typography, Grid } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
 
 import csharp_logo from '../assets/tech-logos/c-sharp-logo.png';
 import css_logo from '../assets/tech-logos/css-logo.png';
@@ -20,13 +18,13 @@ import rubyonrails_logo from '../assets/tech-logos/ruby_on_rails-logo.png';
 import unity_logo from '../assets/tech-logos/unity-logo.png';
 import unreal_engine_logo from '../assets/tech-logos/unreal-engine-logo.png';
 import wwise_logo from '../assets/tech-logos/wwise_logo.png';
-import supercollider_logo from '../assets/tech-logos/supercollider-logo.png';
+// import supercollider_logo from '../assets/tech-logos/supercollider-logo.png';
 
-const languages = ["Javascript", "C#", "Python", "KSP", "C++", "Ruby", "HTML", "CSS", "SQL"];
-const frameworks = ["React", "Redux", "Unity", "Unreal Engine", "Django", "ASP.NET", "Ruby on Rails"];
-const audioTools = ["Wwise", "FMOD", "Reaper", "Musescore"];
-const otherTools = ["MongoDB", "Node.js", "Express", "SQLite3", "PostgreSQL", "Material UI", "Git & Github", "Postman"];
-const methodologies = ["MVC (Model-View-Controller)", "OOP (Object-Oriented Programming)", "Functional Programming", "Restful Routes API"];
+// const languages = ["Javascript", "C#", "Python", "KSP", "C++", "Ruby", "HTML", "CSS", "SQL"];
+// const frameworks = ["React", "Redux", "Unity", "Unreal Engine", "Django", "ASP.NET", "Ruby on Rails"];
+// const audioTools = ["Wwise", "FMOD", "Reaper", "Musescore"];
+// const otherTools = ["MongoDB", "Node.js", "Express", "SQLite3", "PostgreSQL", "Material UI", "Git & Github", "Postman"];
+// const methodologies = ["MVC (Model-View-Controller)", "OOP (Object-Oriented Programming)", "Functional Programming", "Restful Routes API"];
 
 const languages2 = {
     "Javascript": javascript_logo,
@@ -55,27 +53,14 @@ const otherTools2 = {
     "Piskel": piskel_logo
 }
 
-const useStyles = makeStyles(() => ({
-    skillStyles: {
-        fontWeight: 'bold',
-    },
-    skillsContainer: {
-        backgroundColor: "transparent",
-        color: 'white',
-        width: 1200
-    }
-}))
-
 const SkillsData = (props) => {
     const [isLanguage, setIsLanguage] = useState("");
 
-    const classes = useStyles();
-
-    const showItems = (itemsArray) => {
-        return itemsArray.map((item, index)=> {
-            return <ListItem key={index} className="item-list">{item}</ListItem>
-        })
-    }
+    // const showItems = (itemsArray) => {
+    //     return itemsArray.map((item, index)=> {
+    //         return <ListItem key={index} className="item-list">{item}</ListItem>
+    //     })
+    // }
 
     const showKey = (key) => {
         setIsLanguage(key);

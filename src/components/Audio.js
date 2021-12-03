@@ -1,54 +1,11 @@
 import React, { useContext } from 'react';
 import { Link, Tooltip } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
 import FirahFabeLaud from "../assets/FirahFabe_Laud.gif";
 import BandcampLogo from "../assets/bandcamp-button-circle-aqua-512.png"
 import YoutubeLogo from "../assets/youtube.png"
 import SpotifyLogo from "../assets/spotify.png"
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import FullContext from './FullContext';
-
-const useStyles = makeStyles(() => ({
-    mediaStyles: {
-        border: 0,
-        width: "400px",
-        height: "272px",
-        paddingTop: "10px",
-        margin: "20 auto",
-    },
-    secondMediaStyles: {
-        border: 0,
-        width: "400px",
-        height: "172px",
-        paddingTop: "10px",
-        margin: "20 auto",
-    },
-    boxStyles: {
-        position: "relative",
-        display: "flex",
-        paddingLeft: "150px",
-        color: "white"
-    },
-    videoStyles: {
-        width: "560px",
-        height: "315px",
-        padding: "10px"
-    },
-    bandcampStyles: {
-        border: 0,
-        width: "100%",
-        height: "50px"
-    },
-    sideStyles: {
-        float: "left",
-        paddingLeft: "250px",
-        marginLeft: "30px"
-    },
-    socialMediaContainer: {
-        float: "right"
-    }
-
-}))
 
 const socialMedias = [
     {
@@ -79,8 +36,7 @@ const showSocialMedia = () => {
 }
 
 const Audio = () => {
-    const { data, dataDispatch } = useContext(FullContext);
-    const classes = useStyles();
+    const { dataDispatch } = useContext(FullContext);
     const handleClick = () => {
         dataDispatch({type: "GO_HOME"});
     }

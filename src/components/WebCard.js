@@ -1,25 +1,12 @@
 import React from 'react';
-import { Card, CardHeader, CardContent, CardMedia, CardActions, IconButton, Typography, Link, Grow } from '@material-ui/core';
+import { IconButton,  Link } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import WebIcon from '@material-ui/icons/Web';
 import MovieIcon from '@material-ui/icons/Movie';
 
-import { makeStyles } from '@material-ui/styles';
-
-const useStyles = makeStyles(() => ({
-    cardStyles: {
-        width: 300,
-        height: 500,
-        padding: 10,
-        backgroundColor: "transparent",
-        color: 'white'
-    }
-}))
-
 const WebCard = (props) => {
-    const { title, thumbnail, info, toolsUsed, gh, vid} = props.project;
-
-    const classes = useStyles();
+    //toolsUsed
+    const { title, thumbnail, info, gh, vid} = props.project;
 
     const showDemoLink = () => {
         return <Link href={props.project.webDemo}>
@@ -68,6 +55,7 @@ const WebCard = (props) => {
                         <MovieIcon/>
                     </IconButton>
                 </Link>
+                {props.project.webDemo ? showDemoLink() : null}
             </div>
         </div>
     )

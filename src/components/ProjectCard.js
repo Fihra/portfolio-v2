@@ -1,21 +1,9 @@
 import React from 'react';
-import { Card, CardHeader, CardContent, CardMedia, CardActions, IconButton, Typography, Link, Grow } from '@material-ui/core';
+import { IconButton, Link} from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import GamesIcon from '@material-ui/icons/Games';
 import MusicNoteIcon from '@material-ui/icons/MusicNote';
-
-import { makeStyles } from '@material-ui/styles';
-
-const useStyles = makeStyles(() => ({
-    cardStyles: {
-        width: 300,
-        height: 500,
-        padding: 50,
-        backgroundColor: "transparent",
-        color: 'white'
-    }
-}))
 
 const ProjectCard = (props) => {
 
@@ -51,9 +39,8 @@ const ProjectCard = (props) => {
         }
     }
 
-    const { title, thumbnail, info, role, toolsUsed, gh, videoFootage, playGame, soundtrack } = props.project;
-    
-    const classes = useStyles();
+    //toolsUsed
+    const { title, thumbnail, info, role, gh, videoFootage, playGame, soundtrack } = props.project;
     
     return(
         // <Grow in={true} timeout={{enter: 1000}}>

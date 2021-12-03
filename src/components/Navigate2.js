@@ -1,5 +1,4 @@
 import React, { useState, useContext } from 'react';
-import { makeStyles } from '@material-ui/styles';
 import Header from './Header';
 import About from './About';
 import Contact from './Contact';
@@ -8,19 +7,16 @@ import Web from './Web';
 import Audio from './Audio';
 import FullContext from './FullContext';
 
-import { Transition } from "react-transition-group";
-
-const useStyles = makeStyles(() => ({
-    navBarStyles: {
-        fontSize: 20,
-        color: '#ffffff' 
-    }
-}))
+// const useStyles = makeStyles(() => ({
+//     navBarStyles: {
+//         fontSize: 20,
+//         color: '#ffffff' 
+//     }
+// }))
 
 const Navigate = (props) => {
-    const classes = useStyles();
-
-    const [selectionState, setSelectionState] = useState("header");
+    // const classes = useStyles();
+    // const [selectionState, setSelectionState] = useState("header");
     const [isShowButtons, setIsShowButtons] = useState(true);
 
     const { dataDispatch, data } = useContext(FullContext);
@@ -33,6 +29,7 @@ const Navigate = (props) => {
         //     setSelectionState(event.target.value);
         //     setIsShowButtons(false);
         // }
+
         switch(event.target.value){
             case "about":
             case "contact":
@@ -40,11 +37,11 @@ const Navigate = (props) => {
             case "projects":
             case "music":
                 dataDispatch({type: "SELECTED_LINK", payload: event.target.value});
-                setIsShowButtons(false);
+                setIsShowButtons(!isShowButtons);
                 return;
             default:
                 dataDispatch({type: "GO_HOME"});
-                setIsShowButtons(true);
+                setIsShowButtons(!isShowButtons);
                 return;
         }
         
