@@ -6,6 +6,7 @@ import FullContext from './FullContext';
 import ReactPlayer from 'react-player';
 
 //Project Image Assets
+import ShiningPower from '../assets/Tala_WIP_game.png';
 import Maliksi from '../assets/Maliksi.png';
 import MultoIlaw from '../assets/multo-ilaw.png';
 import RitsuMochi from '../assets/ritsu_mochi.png';
@@ -30,15 +31,26 @@ const Games = (props) => {
 
     const projectData = [
         {
+            title: 'Shining Power',
+            thumbnail: ShiningPower,
+            info: 'A mobile 2D topdown shooter game where you play as Tala, goddess of the morning and evening star, with her power of light to defeat the overcoming darkness and bring balance of Light & Dark.',
+            role: "Solo Developer",
+            toolsUsed: "Unity, still deciding which Audio Middleware, Musescore, Reaper, Piskel, GIMP",
+            gh: "https://github.com/Fihra/Shining_Power",
+            videoFootage: null,
+            playGame: null,
+            soundtrack: null
+        },
+        {
             title: 'Maliksi',
             thumbnail: Maliksi,
             info: 'A 2D boss rush game where you fight Filipino folklore-inspired creatures to retrieve the stolen light.',
             role: "Solo Developer",
             toolsUsed: "Unreal Engine, Wwise, UE Blueprinting, Piskel, Reaper, Musescore, Paint.NET",
             gh: null,
-            videoFootage: null,
-            playGame: null,
-            soundtrack: null
+            videoFootage: "https://youtu.be/ODZRa-UH6jE",
+            playGame: "https://firahfabe.itch.io/maliksi",
+            soundtrack: "https://firahfabe.bandcamp.com/album/maliksi-game-soundtrack"
         },
         {
             title: 'Multo ilaw',

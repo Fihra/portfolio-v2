@@ -7,29 +7,11 @@ import Web from './Web';
 import Audio from './Audio';
 import FullContext from './FullContext';
 
-// const useStyles = makeStyles(() => ({
-//     navBarStyles: {
-//         fontSize: 20,
-//         color: '#ffffff' 
-//     }
-// }))
-
 const Navigate = (props) => {
-    // const classes = useStyles();
-    // const [selectionState, setSelectionState] = useState("header");
     const [isShowButtons, setIsShowButtons] = useState(true);
-
     const { dataDispatch, data } = useContext(FullContext);
 
     const handleChange = (event) => {
-        // if(event.target.value === selectionState){
-        //     setSelectionState("header");
-        //     setIsShowButtons(true);
-        // }else {
-        //     setSelectionState(event.target.value);
-        //     setIsShowButtons(false);
-        // }
-
         switch(event.target.value){
             case "about":
             case "contact":
