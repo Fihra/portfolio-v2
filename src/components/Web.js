@@ -11,6 +11,7 @@ import LearnRondalla from '../assets/Learn_Rondalla.png';
 import MusicLeftovers from '../assets/Music_leftovers.png';
 import MusicLeftoversVid from '../assets/Music_Leftovers_demo.mp4';
 import SaranayVST from '../assets/Saranay_VST_Demo.gif';
+import WaverSynth from '../assets/Waver_Synth.gif';
 
 import WebCard from './WebCard';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
@@ -25,6 +26,14 @@ const Web = (props) => {
     }
 
     const projectData = [
+        {
+            title: "Waver Synth",
+            thumbnail: WaverSynth,
+            info: "A Web synthesizer to play & record a 10 sec melody",
+            toolsUsed: "React Hooks, Tone.js, Audio Oscilloscope, React Simple Knob",
+            gh: "https://github.com/Fihra/waver-synth",
+            webDemo: "https://waversynth.netlify.app/"
+        },
         {
             title: 'Music Leftovers',
             thumbnail: MusicLeftovers,
