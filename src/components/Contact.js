@@ -28,7 +28,7 @@ const Contact = () => {
     return(
         <div className="contact-container">
             <h1>Contact</h1>
-            <button onClick={handleClick} className="back-button" style={{position: 'absolute', top: 20, left: 400} }><ArrowBackIcon/></button>
+            <button onClick={handleClick} className="back-button" style={{position: 'absolute', top: 20, left: 20} }><ArrowBackIcon/></button>
             {/* <p>Currently seeking for <b><u>Technical Sound Designer</u></b> or <b><u>Software Engineer</u></b> opportunities.</p> */}
             <p>If you are looking for someone to help with <b><u>Game Audio Implementation</u></b>, or seeking a <b><u>Composer</u></b>,</p>
             <p>Please email me <a href={myEmail}>here</a>.</p>
