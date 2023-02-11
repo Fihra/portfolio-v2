@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6, p, button, span {
   color: #4DC21E;
 }
 
-p, a {
+p, a, li {
   color: white;
 }
 
@@ -27,7 +27,7 @@ a:hover {
   color: white;
 }
 
-h1, h2, h3, h4, h5, h6, span {
+h1, h2, h3, h4, h5, h6, span,b {
   text-shadow: 2px 2px black;
 }
 
@@ -304,21 +304,29 @@ About Page
   animation-duration: 1s;
   animation-name: slideright;
   animation-iteration-count: 1;
+  max-width: 1200px;
+}
+
+.about-header {
+  text-align: left; 
+  margin-left: 140px;
+
 }
 
 .solo-headshot {
   height: 200px;
   width: 175px;
-  float: left;
-  padding: 0 10px 0 0;
+  float: right;
   border-radius: 25px; 
-  margin-left: 100px;
 }
 
 .about-paragraph {
   text-align: left;
-  margin: 0 10px 0 0;
-  inline-size: 900;
+  padding: 0 24px;
+}
+
+.about-paragraph b, .about-paragraph span, .contact-container b {
+  color: rgb(108, 137, 255);
 }
 
 @keyframes slideright {
@@ -333,7 +341,8 @@ About Page
 }
 
 .skills-container {
-  margin: 50px;
+  position: absolute;
+  /* margin: 50px; */
 }
 
 .show-certain-skill {
@@ -346,16 +355,16 @@ About Page
 }
 
 .skill-img {
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   animation-duration: 8s;
   animation-name: fadein;
   animation-iteration-count: 1;
 }
 
 .skill-img:hover {
-  width: 85px;
-  height: 85px;
+  width: 55px;
+  height: 55px;
 }
 
 /*==========
@@ -541,6 +550,41 @@ socialMediaContainer: {
 
 
 /*Media Responsive Design */
+@media screen and (max-width: 1200px) {
+  .project-side-bar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+
+  .project-side-bar h1{
+    margin-top: -20px;
+  }
+
+  .back-button {
+    margin-left: 75px;
+  }
+
+  .project-container {
+    height: 25%;
+    margin: 0 auto;
+    max-width: 200px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+
+  .project-container h2, p{
+    font-size: 13px;
+  }
+
+  .project-container img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
 @media screen and (max-width: 1080px) {
   .name-container span {
     font-size: 15px;
@@ -549,6 +593,15 @@ socialMediaContainer: {
   }
 }
 
+@media screen and (max-width: 715px) {
+  .project-side-bar h3 {
+    display: none;
+  }
+  
+  .video-reel-player {
+    display: none;
+  }
+}
 @media screen and (max-width: 600px){
   .link-btn {
     width: 100px;
@@ -585,51 +638,6 @@ socialMediaContainer: {
     font-size: 15px;
     display: block;
     align-items: center;
-  }
-
-  .project-side-bar {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-  }
-
-  .project-side-bar h1{
-    margin-top: -20px;
-  }
-
-  .back-button {
-    margin-left: -50px;
-  }
-
-  .project-side-bar h3 {
-    display: none;
-  }
-  
-  .video-reel-player {
-    display: none;
-  }
-
-  .project-container {
-    height: 25%;
-    margin: 0 auto;
-    max-width: 200px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-  }
-
-  .project-container h2, p{
-    font-size: 13px;
-  }
-
-  .project-container img {
-    width: 200px;
-    height: 200px;
-  }
-
-  .software-projects-container {
-
   }
 
   .web-side-bar {
