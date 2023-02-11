@@ -110,7 +110,7 @@ const SkillsData = (props) => {
         <div className="skills-container">
             <br/>
             <br/>
-            {isLanguage !== "" ? <span className="show-certain-skill"> | {isLanguage} |</span> : null} 
+            {isLanguage !== "" ? <h3 className="show-certain-skill"> | {isLanguage} |</h3> : null} 
              <div className="all-skills">
                 <div>
                     <h3>Languages</h3>
