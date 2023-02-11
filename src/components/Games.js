@@ -6,11 +6,13 @@ import FullContext from './FullContext';
 import ReactPlayer from 'react-player';
 
 //Project Image Assets
-import ShiningPower from '../assets/Tala_WIP_game.png';
+import HalimawSalakay from '../assets/halimaw_salakay.png';
+import GreatBleaching from '../assets/the_great_bleaching.png';
+// import ShiningPower from '../assets/Tala_WIP_game.png';
 import Maliksi from '../assets/Maliksi.png';
 import MultoIlaw from '../assets/multo-ilaw.png';
 import RitsuMochi from '../assets/ritsu_mochi.png';
-import Buwan from '../assets/Reincarnation_of_Buwan.jpg';
+// import Buwan from '../assets/Reincarnation_of_Buwan.jpg';
 import AsteroidDefense from '../assets/Asteroid_Defense.png';
 import NLV from '../assets/NLV.png';
 import OshaCoaster from '../assets/OshaCoaster.jpg';
@@ -30,15 +32,37 @@ const Games = (props) => {
     }
 
     const projectData = [
+        // {
+        //     title: 'Shining Power',
+        //     thumbnail: ShiningPower,
+        //     info: 'A mobile 2D topdown shooter game where you play as Tala, goddess of the morning and evening star, with her power of light to defeat the overcoming darkness and bring balance of Light & Dark.',
+        //     role: "Solo Developer",
+        //     toolsUsed: "Unity, still deciding which Audio Middleware, Musescore, Reaper, Piskel, GIMP",
+        //     gh: "https://github.com/Fihra/Shining_Power",
+        //     videoFootage: null,
+        //     playGame: null,
+        //     soundtrack: null
+        // },
         {
-            title: 'Shining Power',
-            thumbnail: ShiningPower,
-            info: 'A mobile 2D topdown shooter game where you play as Tala, goddess of the morning and evening star, with her power of light to defeat the overcoming darkness and bring balance of Light & Dark.',
-            role: "Solo Developer",
-            toolsUsed: "Unity, still deciding which Audio Middleware, Musescore, Reaper, Piskel, GIMP",
-            gh: "https://github.com/Fihra/Shining_Power",
+            title: 'Halimaw Salakay (WIP)',
+            thumbnail: HalimawSalakay,
+            info: "A 2D defense game where you must defend your village from incoming Filipino-inspired mythological creatures",
+            role: 'Solo Developer',
+            toolsUsed: "Unity, FMOD, Piskel, Reaper, MuseScore, Paint.NET",
+            gh: null,
             videoFootage: null,
             playGame: null,
+            soundtrack: null
+        },
+        {
+            title: 'The Great Bleaching',
+            thumbnail: GreatBleaching,
+            info: "A 3D adventure game where you play as Liko the Louse, to embark on a quest to save the village from 'The Great Bleaching' of the hair destruction.",
+            role: 'Audio Implementer',
+            toolsUsed: "Unity, FMOD",
+            gh: "https://github.com/andyman/TheGreatBleaching",
+            videoFootage: null,
+            playGame: "https://andyman404.itch.io/bleaching",
             soundtrack: null
         },
         {
@@ -46,7 +70,7 @@ const Games = (props) => {
             thumbnail: Maliksi,
             info: 'A 2D boss rush game where you fight Filipino folklore-inspired creatures to retrieve the stolen light.',
             role: "Solo Developer",
-            toolsUsed: "Unreal Engine, Wwise, UE Blueprinting, Piskel, Reaper, Musescore, Paint.NET",
+            toolsUsed: "Unreal Engine, Wwise, UE Blueprinting, Piskel, Reaper, MuseScore, Paint.NET",
             gh: null,
             videoFootage: "https://youtu.be/ODZRa-UH6jE",
             playGame: "https://firahfabe.itch.io/maliksi",
@@ -57,23 +81,23 @@ const Games = (props) => {
             thumbnail: MultoIlaw,
             info: "A 2D game where you play as a ghost who must bring a light to a village to ward off the evil spirits.",
             role: "Solo Developer",
-            toolsUsed: "Unity, Wwise, C#, Piskel, Reaper, Musescore",
+            toolsUsed: "Unity, Wwise, C#, Piskel, Reaper, MuseScore",
             gh: "https://github.com/Fihra/multo-ilaw",
             videoFootage: "https://youtu.be/70yQqVuBUv4",
             playGame: "https://firahfabe.itch.io/multo-ilaw",
             soundtrack: "https://firahfabe.bandcamp.com/album/multo-ilaw-game-soundtrack"
         },
-        {
-            title: 'Reincarnation of Buwan (On Hold)',
-            thumbnail: Buwan,
-            info: "A 2D Unity Action-Adventure game where you play as Buwan, an Aswang weredog, to save the world from an evil witch.",
-            role: "Solo Developer",
-            toolsUsed: "Unity, C#, Piskel, Wwise, Reaper, Musescore",
-            gh: null,
-            videoFootage: null,
-            playGame: null,
-            soundtrack: null
-        },
+        // {
+        //     title: 'Reincarnation of Buwan (On Hold)',
+        //     thumbnail: Buwan,
+        //     info: "A 2D Unity Action-Adventure game where you play as Buwan, an Aswang weredog, to save the world from an evil witch.",
+        //     role: "Solo Developer",
+        //     toolsUsed: "Unity, C#, Piskel, Wwise, Reaper, Musescore",
+        //     gh: null,
+        //     videoFootage: null,
+        //     playGame: null,
+        //     soundtrack: null
+        // },
         {
             title: 'Ritsu & Mochi',
             thumbnail: RitsuMochi,
@@ -90,7 +114,7 @@ const Games = (props) => {
             thumbnail: AsteroidDefense,
             info: "A Unity 2D Space-shooter game where you shoot down falling asteroids hurling towards Earth.",
             role: "Solo Developer",
-            toolsUsed: "Unity, C#, Wwise, Reaper, Musescore, Paint.NET",
+            toolsUsed: "Unity, C#, Wwise, Reaper, MuseScore, Paint.NET",
             gh: "https://github.com/Fihra/Asteroid-Defense",
             videoFootage: "https://youtu.be/rDpsfB2TOX0",
             playGame: null,
@@ -101,7 +125,7 @@ const Games = (props) => {
             thumbnail: NLV,
             info: "From Spooktober Game Jam 2020, a Ren'py dating visual novel game about vampire lesbians.",
             role: "Composer, Sound Designer, & Dialogue Audio Editor",
-            toolsUsed: "Reaper, Musescore",
+            toolsUsed: "Reaper, MuseScore",
             gh: null,
             videoFootage: "https://youtu.be/GqrOw6bhDKk",
             playGame: "https://scribbles.itch.io/night-of-the-lesbian-vampires",
@@ -123,7 +147,7 @@ const Games = (props) => {
             thumbnail: DeathByDebt,
             info: "From NaNoReNo 2020 Game Jam, a Ren'py visual novel game of after losing your job, you are on the hunt for another one before getting evicted from your apartment.",
             role: "Composer",
-            toolsUsed: "Musescore, Reaper",
+            toolsUsed: "MuseScore, Reaper",
             videoFootage: null,
             gh: null,
             playGame: "https://zevvy.itch.io/death-by-debt",
@@ -134,7 +158,7 @@ const Games = (props) => {
             thumbnail: SideTracked,
             info: "From NaNoReNo 2020 Game Jam, a Ren'py visual novel game about getting one thing done in the course of a day due to many distractions.",
             role: "Composer & Sound Designer",
-            toolsUsed: "Musescore, Reaper, Foley recording",
+            toolsUsed: "MuseScore, Reaper, Foley recording",
             videoFootage: null,
             gh: null,
             playGame: "https://komehara.itch.io/sidetracked",
@@ -145,7 +169,7 @@ const Games = (props) => {
             thumbnail: PathFinder,
             info: "From Lux Game Jam 2020, 2D Top-down Survival Arcade, with a revolver & lights at your disposal, you must fend off enemies that hide in the shadows.",
             role: "Sound Designer & Composer",
-            toolsUsed: "Reaper, Musescore",
+            toolsUsed: "Reaper, MuseScore",
             gh: null,
             videoFootage: null,
             playGame: "https://codetorex.itch.io/pathfinder",
@@ -167,7 +191,7 @@ const Games = (props) => {
             thumbnail: fmodAudioDemo,
             info: "A Unity demo that utilizes FMOD music layering integration and sound effects.",
             role: "Solo Developer",
-            toolsUsed: "FMOD, C#, Unity, Reaper, Musescore",
+            toolsUsed: "FMOD, C#, Unity, Reaper, MuseScore",
             gh: "https://github.com/Fihra/FMOD-Audio_Integration_Demo",
             videoFootage: "https://youtu.be/cNpKzpzEpts",
             playGame: null,
@@ -202,6 +226,10 @@ const Games = (props) => {
                     <button className="back-button" onClick={handleClick}><ArrowForwardIcon/></button>
                     <h3>Game Audio Reel</h3>
                     <ReactPlayer url={gameAudioReel} width={475} className="video-reel-player"/>
+                    <h4>
+                    <a href={gameAudioReel} style={{wordBreak:"break-all"}}><p>Video Portfolio</p> 
+                    <p>Reel here</p></a>
+                    </h4>
                 </div>
             </div>
             
