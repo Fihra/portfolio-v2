@@ -85,6 +85,7 @@ const Audio = () => {
                 {showSocialMedia()}
             </div>
             <div className="bandcamp-container">
+                <iframe title="Cyber Occult Bandcamp" className="bandcamp-styles" src="https://bandcamp.com/EmbeddedPlayer/album=608568155/size=large/bgcol=333333/linkcol=9a64ff/artwork=small/transparent=true/" seamless><a href="https://firahfabe.bandcamp.com/album/cyber-occult">Cyber Occult by FirahFabe</a></iframe>
                 <iframe title="Forest Haven Bandcamp" className="bandcamp-styles" src="https://bandcamp.com/EmbeddedPlayer/album=1994845105/size=large/bgcol=333333/linkcol=2ebd35/artwork=small/transparent=true/" seamless><a href="https://firahfabe.bandcamp.com/album/forest-haven">Forest Haven by FirahFabe</a></iframe>
                 <iframe title="Farlah's Voyage Bandcamp" className="bandcamp-styles" src="https://bandcamp.com/EmbeddedPlayer/album=159311342/size=large/bgcol=333333/linkcol=4ec5ec/artwork=small/transparent=true/" seamless><a href="https://firahfabe.bandcamp.com/album/farlahs-voyage-filipino-rpg-inspired">Farlah&#39;s Voyage: Filipino RPG-Inspired by FirahFabe</a></iframe>
             </div>
