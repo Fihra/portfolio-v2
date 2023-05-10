@@ -12,6 +12,7 @@ import MusicLeftovers from '../assets/Music_leftovers.png';
 import MusicLeftoversVid from '../assets/Music_Leftovers_demo.mp4';
 import SaranayVST from '../assets/Saranay_VST_Demo.gif';
 import WaverSynth from '../assets/Waver_Synth.gif';
+import PolarPatterns from '../assets/polar-patterns-app.gif';
 
 import WebCard from './WebCard';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
@@ -26,6 +27,14 @@ const Web = (props) => {
     }
 
     const projectData = [
+        {
+            title: "Polar Patterns",
+            thumbnail: PolarPatterns,
+            info: "A Web app that displays polar patterns for microphone recordings",
+            toolsUsed: "React Hooks, HTML Canvas, React tooltip, React Spring 3D Carousel, React Transition Group",
+            gh: "https://github.com/Fihra/polar-patterns",
+            webDemo: "https://polar-patterns.netlify.app/"
+        },
         {
             title: "Waver Synth",
             thumbnail: WaverSynth,
