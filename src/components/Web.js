@@ -13,12 +13,13 @@ import MusicLeftoversVid from '../assets/Music_Leftovers_demo.mp4';
 import SaranayVST from '../assets/Saranay_VST_Demo.gif';
 import WaverSynth from '../assets/Waver_Synth.gif';
 import PolarPatterns from '../assets/polar-patterns-app.gif';
+import ErgoArgot from '../assets/ergo-argot-demo.gif';
 
 import WebCard from './WebCard';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import FullContext from './FullContext';
 
-const Web = (props) => {
+const Web = () => {
 
     const { dataDispatch } = useContext(FullContext);
 
@@ -27,6 +28,14 @@ const Web = (props) => {
     }
 
     const projectData = [
+        {
+            title: "Ergo Argot",
+            thumbnail: ErgoArgot,
+            info: "A mobile app where the user can search a term based on the Urban Dictionary API",
+            toolsUsed: "React Native, Expo, Urban Dictionary API, Axios, Dotenv",
+            gh: "https://github.com/Fihra/ergo-argot",
+            webDemo: "https://ergo-argot.netlify.app/"
+        },
         {
             title: "Polar Patterns",
             thumbnail: PolarPatterns,
