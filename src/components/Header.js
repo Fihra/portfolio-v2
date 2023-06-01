@@ -48,7 +48,7 @@ const Header = () => {
         // </div>
         <div className="name-container">
             <h1 className="name-tag">Fabian Fabro</h1>
-            <span className="tech-audio-tag">Technical Audio Designer</span> | <span className="software-dev-tag">Software Engineer</span> | <span className="composer-tag">Composer</span>
+            <span className="tech-audio-tag">Technical Audio Designer</span> | <span className="software-dev-tag">Software Developer</span> | <span className="composer-tag">Composer</span>
         </div>
     )
 }
