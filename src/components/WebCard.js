@@ -6,12 +6,28 @@ import MovieIcon from '@material-ui/icons/Movie';
 
 const WebCard = (props) => {
     //toolsUsed
-    const { title, thumbnail, info, gh, vid} = props.project;
+    const { title, thumbnail, info, gh, vid, webDemo} = props.project;
 
     const showDemoLink = () => {
-        return <Link href={props.project.webDemo}>
+        return <Link href={webDemo}>
             <IconButton color="primary">
                 <WebIcon/>
+            </IconButton>
+        </Link>
+    }
+
+    const showVid = () => {
+        return <Link href={vid}>
+            <IconButton>
+                <MovieIcon/>
+            </IconButton>
+        </Link>
+    }
+
+    const showGithub = () => {
+        return <Link href={gh}>
+            <IconButton>
+                <GitHubIcon/>
             </IconButton>
         </Link>
     }
@@ -45,17 +61,9 @@ const WebCard = (props) => {
             <h2>{title}</h2>
             <p>{info}</p>
             <div className="project-links">
-                <Link href={gh}>
-                    <IconButton>
-                        <GitHubIcon/>
-                    </IconButton>
-                </Link>
-                <Link href={vid}>
-                    <IconButton>
-                        <MovieIcon/>
-                    </IconButton>
-                </Link>
-                {props.project.webDemo ? showDemoLink() : null}
+                {gh ? showGithub() : null}
+                {vid ? showVid() : null}
+                {webDemo ? showDemoLink() : null}
             </div>
         </div>
     )
